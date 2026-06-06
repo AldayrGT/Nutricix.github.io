@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Foodwagon | Responsive, Ecommerce &amp; Business Templatee</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+    <div id="header"></div>
+
+    <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+    </script>
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================--> 
+      <section class="py-5 overflow-hidden bg-primary" id="home">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 mt-8 mt-md-0"><a class="img-landing-banner" href="#!"><img class="img-fluid" src="assets/img/gallery/hero-header.png" alt="hero-header" /></a></div>
+            <div class="col-md-7 col-lg-6 py-8 text-md-start text-center">
+              <h1 class="display-1 fs-md-5 fs-lg-6 fs-xl-8 text-light">Quieres comer saludable?</h1>
+              <h1 class="text-800 mb-5 fs-4">Tu bienestar comienza con una buena alimentación.<br class="d-none d-xxl-block" /> Descubre opciones deliciosas y equilibradas.</h1>
+              <div class="card w-xxl-75">
+                <div class="card-body">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active mb-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-motorcycle me-2"></i>Delivery</button>
+                      <button class="nav-link mb-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-bag me-2"></i>Pickup</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content mt-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <form class="row gx-2 gy-2 align-items-center">
+                        <div class="col">
+                          <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                            <label class="visually-hidden" for="inputDelivery">Address</label>
+                            <input class="form-control input-box form-foodwagon-control" id="inputDelivery" type="text" placeholder="Enter Your Address" />
+                          </div>
+                        </div>
+                        <div class="d-grid gap-3 col-sm-auto">
+                          <button class="btn btn-danger" type="submit">Buscar Comida</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <form class="row gx-4 gy-2 align-items-center">
+                        <div class="col">
+                          <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                            <label class="visually-hidden" for="inputPickup">Address</label>
+                            <input class="form-control input-box form-foodwagon-control" id="inputPickup" type="text" placeholder="Enter Your Address" />
+                          </div>
+                        </div>
+                        <div class="d-grid gap-3 col-sm-auto">
+                          <button class="btn btn-danger" type="submit">Find Food</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+
+        <div class="container">
+          <div class="row h-100 gx-2 mt-7">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+              <div class="card card-span h-100">
+                <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="assets/img/gallery/discount-item-1.png" alt="..." />
+                  <div class="card-actions">
+                    <div class="badge badge-foodwagon bg-primary p-4">
+                      <div class="d-flex flex-between-center">
+                        <div class="text-white fs-7">15</div>
+                        <div class="d-block text-white fs-2">% <br />
+                          <div class="fw-normal fs-1 mt-2">Off</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold text-1000 text-truncate">Ensalada de verano</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">Quedan 6 dias</span></span>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+              <div class="card card-span h-100">
+                <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="assets/img/gallery/discount-item-2.png" alt="..." />
+                  <div class="card-actions">
+                    <div class="badge badge-foodwagon bg-primary p-4">
+                      <div class="d-flex flex-between-center">
+                        <div class="text-white fs-7">10</div>
+                        <div class="d-block text-white fs-2">% <br />
+                          <div class="fw-normal fs-1 mt-2">Off</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold text-1000 text-truncate">Pasta Italiana Primaveral</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">Quedan 6 dias</span></span>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+              <div class="card card-span h-100">
+                <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="assets/img/gallery/discount-item-3.png" alt="..." />
+                  <div class="card-actions">
+                    <div class="badge badge-foodwagon bg-primary p-4">
+                      <div class="d-flex flex-between-center">
+                        <div class="text-white fs-7">25</div>
+                        <div class="d-block text-white fs-2">% <br />
+                          <div class="fw-normal fs-1 mt-2">Off</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold text-1000 text-truncate">Mariscos en Salsa Roja</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">Quedan 6 dias</span></span>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+              <div class="card card-span h-100">
+                <div class="position-relative"> <img class="img-fluid rounded-3 w-100" src="assets/img/gallery/discount-item-4.png" alt="..." />
+                  <div class="card-actions">
+                    <div class="badge badge-foodwagon bg-primary p-4">
+                      <div class="d-flex flex-between-center">
+                        <div class="text-white fs-7">20</div>
+                        <div class="d-block text-white fs-2">% <br />
+                          <div class="fw-normal fs-1 mt-2">Off</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold text-1000 text-truncate">Bowl Veraniego</h5><span class="badge bg-soft-danger py-2 px-3"><span class="fs-1 text-danger">Quedan 6 dias</span></span>
+                </div><a class="stretched-link" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 bg-primary-gradient">
+
+        <div class="container">
+          <div class="row justify-content-center g-0">
+            <div class="col-xl-9">
+              <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+                <h5 class="fw-bold text-danger fs-3 fs-lg-5 lh-sm my-6">¿Cómo funciona?</h5>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-3 mb-6">
+                  <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/location.png" height="112" alt="..." />
+                    <h5 class="mt-4 fw-bold">Seleccione la ubicación</h5>
+                    <p class="mb-md-0">Elige el lugar donde se entregará tu comida.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-6">
+                  <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/order.png" height="112" alt="..." />
+                    <h5 class="mt-4 fw-bold">Elige tu pedido</h5>
+                    <p class="mb-md-0">Revisa cientos de menús para elegir tu comida favorita.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-6">
+                  <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/pay.png" height="112" alt="..." />
+                    <h5 class="mt-4 fw-bold">Pago por adelantado</h5>
+                    <p class="mb-md-0">Es rápido, seguro y sencillo. Seleccione varios métodos de pago.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-6">
+                  <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/meals.png" height="112" alt="..." />
+                    <h5 class="mt-4 fw-bold">Disfrute de las comidas</h5>
+                    <p class="mb-md-0">La comida se prepara y se entrega directamente en su domicilio.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-4 overflow-hidden">
+
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mt-7 mb-5">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm">Lo Mas Popular</h5>
+            </div>
+            <div class="col-12">
+              <div class="carousel slide" id="carouselPopularItems" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row gx-3 h-100 align-items-center">
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/BowlMediterráneo.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Bowl Mediterráneo</h5>
+                            <span class="text-1000 fw-bold">s/ 24.50</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/toffes-cake.png" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Pancakes de Avena</h5>
+                            <span class="text-1000 fw-bold">s/ 14.90</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/WrapdePolloVegetales.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Wrap de Pollo y Vegetales</h5>
+                            <span class="text-1000 fw-bold">s/ 18.50</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/CremaCalabaza.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Crema de Calabaza</h5>
+                            <span class="text-1000 fw-bold">s/ 16.90</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/AvenaconFrutosRojos.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Avena con Frutos Rojos</h5>
+                            <span class="text-1000 fw-bold">s/ 15.00</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="row gx-3 h-100 align-items-center">
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/YogurGriegoconGranola.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Yogur Griego con Granola</h5>
+                            <span class="text-1000 fw-bold">s/ 19.90</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/SándwichIntegraldePavo.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Sándwich Integral de Pavo</h5>
+                            <span class="text-1000 fw-bold">s/ 14.30</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/OmelettedeEspinaca.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Omelette de Espinaca</h5>
+                            <span class="text-1000 fw-bold">s/ 10.99</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/EnsaladadeGarbanzos.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Ensalada de Garbanzos</h5>
+                            <span class="text-1000 fw-bold">s/ 14.00</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/thai-soup.png" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="fw-bold text-1000 text-truncate mb-1">Sopa Tailandesa</h5>
+                            <span class="text-1000 fw-bold">s/ 12.70</span>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2"><a class="btn btn-lg btn-danger" href="#!" role="button">Ordenar Ahora</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev carousel-icon" type="button" data-bs-target="#carouselPopularItems" data-bs-slide="prev"><span class="carousel-control-prev-icon hover-top-shadow" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next carousel-icon" type="button" data-bs-target="#carouselPopularItems" data-bs-slide="next"><span class="carousel-control-next-icon hover-top-shadow" aria-hidden="true"></span><span class="visually-hidden">Next </span></button>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section id="testimonial">
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Comida Destacada</h5>
+            </div>
+          </div>
+          <div class="row gx-2">
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/BatidodePlatano.jpg" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">20% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Batido de Platano</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Disponible Mañana</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/pizza-hub.png" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Smoothie Detox Verde</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Disponible Mañana</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/donuts-hut.png" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">15% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Pancakes de Avena y Plátano</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/BatidodeFresa.jpg" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">15% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Batido de Fresa</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/ruby-tuesday.png" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Filete Magro con Verduras</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/kuakata.png" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Pollo Grill con Vegetales</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/red-square.png" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Sopa Detox de Verduras</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+              <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/SalmonConVerduras.jpg" alt="..." />
+                <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0">10% off</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span class="fs-0">Fast</span></span></div>
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center mb-3"><img class="img-fluid" alt="" />
+                    <div class="flex-1 ms-3">
+                      <h5 class="mb-0 fw-bold text-1000">Salmon Con Verduras</h5><span class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span class="mb-0 text-primary">5</span>
+                    </div>
+                  </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Disponible Ahora</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5"> <a class="btn btn-lg btn-primary" href="#!">Ver Todo<i class="fas fa-chevron-right ms-2"> </i></a></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-8 overflow-hidden">
+
+        <div class="container">
+          <div class="row flex-center mb-6">
+            <div class="col-lg-7">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm text-center text-lg-start">Buscar Por comida</h5>
+            </div>
+            <div class="col-lg-4 text-lg-end text-center"><a class="btn btn-lg text-800 me-2" href="#" role="button">VER TODO<i class="fas fa-chevron-right ms-2"></i></a></div>
+            <div class="col-lg-auto position-relative">
+              <button class="carousel-control-prev s-icon-prev carousel-icon" type="button" data-bs-target="#carouselSearchByFood" data-bs-slide="prev"><span class="carousel-control-prev-icon hover-top-shadow" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+              <button class="carousel-control-next s-icon-next carousel-icon" type="button" data-bs-target="#carouselSearchByFood" data-bs-slide="next"><span class="carousel-control-next-icon hover-top-shadow" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+          </div>
+          <div class="row flex-center">
+            <div class="col-12">
+              <div class="carousel slide" id="carouselSearchByFood" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/Pancakes.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Pancakes</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/ensalda.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Ensalada</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/pescado.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Pescado</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/sub-sandwich.png" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Sub-sandwiches</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/chowmein.png" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Spageti</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/steak.png" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Filete</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/smothie.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Smoothie</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/crema.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Crema</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/pollo.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Pollo</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/avena.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Avena</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/sopa.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Sopa</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                        <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100" src="assets/img/gallery/batidos.jpg" alt="..." />
+                          <div class="card-body ps-0">
+                            <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Batido</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-5 pt-8">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card card-span mb-3 shadow-lg">
+                <div class="card-body py-0">
+                  <div class="row justify-content-center">
+                    <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0" src="assets/img/gallery/crispy-sandwiches.png" alt="..." /></div>
+                    <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                      <h1 class="card-title mt-xl-5 mb-4">Las mejores ofertas <span class="text-primary">En Sandwiches</span></h1>
+                      <p class="fs-1">Disfruta de lo mas saludable de nuestros sándwiches. Completa tu comida con la rebanada perfecta.</p>
+                      <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">REALIZAR PEDIDO<i class="fas fa-chevron-right ms-2"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card card-span mb-3 shadow-lg">
+                <div class="card-body py-0">
+                  <div class="row justify-content-center">
+                    <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-md-0"><img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-start rounded-md-top-0" src="assets/img/gallery/pollon.jpg" alt="..." /></div>
+                    <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                      <h1 class="card-title mt-xl-5 mb-4">Alimenta tu cuerpo <span class="text-primary">con proteína de calidad</span></h1>
+                      <p class="fs-1">Disfruta nuestros bowls nutritivos con pollo a la plancha, vegetales frescos y granos integrales.</p>
+                      <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">REALIZAR PEDIDO<i class="fas fa-chevron-right ms-2"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card card-span mb-3 shadow-lg">
+                <div class="card-body py-0">
+                  <div class="row justify-content-center">
+                    <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0" src="assets/img/gallery/paltaa.jpg" alt="..." /></div>
+                    <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                      <h1 class="card-title mt-xl-5 mb-4">¿Buscas una comida deliciosa y <span class="text-primary">saludable?</span></h1>
+                      <p class="fs-1">saludable?Descubre nuestros bowls balanceados, preparados con ingredientes frescos y diseñados para una nutrición completa.</p>
+                      <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">REALIZAR PEDIDO<i class="fas fa-chevron-right ms-2"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-0">
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/cta-two-bg.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-xxl-9 py-7 text-center">
+              <h1 class="fw-bold mb-4 text-white fs-6">¿Estás listo para hacer tu pedido <br />con las mejores ofertas? </h1><a class="btn btn-danger" href="#"> REALIZAR PEDIDO<i class="fas fa-chevron-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap" rel="stylesheet">
+  </body>
+<div id="footer"></div>
+
+<script>
+fetch('footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
+</script>
